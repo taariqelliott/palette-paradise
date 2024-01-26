@@ -17,7 +17,7 @@ function App() {
         </div>
       </div>
       <button onClick={() => exportAsImage(exportRef.current, "test")}>
-        Capture Image
+        Download Image
       </button>
     </>
   )
