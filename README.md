@@ -1,11 +1,9 @@
 # Palette Paradise
 
-markdown test  
-this <br>
+### A color palette geenrator that will allow users to randomly select colors, have colors based on the triangle color theory and other coor theory models. <br>
 
-    <html>
-        <body>
-            <p>Let’s keep it as a code block and not render it for once</p>
-                <h1>TEST</h1>,
-        </body>
-    </html>
+## MVP
+1. Generate colors
+2. Export the image with the hexcode involved.
+3. 
+
