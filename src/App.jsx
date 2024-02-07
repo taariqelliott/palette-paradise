@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import "./App.css";
 import ExportAsImage from "./utils/ExportAsImage";
 import ColorPicker from "./components/ColorPicker";
+import BottomNav from "./components/BottomNav";
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
       <button className="download" onClick={() => ExportAsImage(exportRef.current, "palette")}>
         Download Palette
       </button>
+      <BottomNav/>
     </div>
   );
 }

@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import InputColor from 'react-input-color';
+
 import "../App.css";
 
 function contrast(hex) {
@@ -42,7 +44,6 @@ const ColorPicker = (props) => {
         <div
             className="color-picker-container"
             style={{ backgroundColor: color, color: textColor }}>
-
             <div
                 className="color-display"
                 style={{ backgroundColor: color, color: textColor }}>
@@ -68,7 +69,8 @@ const ColorPicker = (props) => {
                 type="color"
                 value={color}
                 onChange={handleColorChange}
-                className="input" />
+                className="input"
+            />
 
         </div>
     );

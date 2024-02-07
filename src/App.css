@@ -7,9 +7,10 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px;
     overflow: hidden;
     margin: 5px;
+    border: black 3px solid;
+    border-radius: 15px;
 
 }
 
@@ -20,6 +21,8 @@ body {
     justify-content: center;
     align-items: center;
     padding: 5px;
+    height: 400px;
+    overflow: hidden;
 }
 
 .selected-color {
