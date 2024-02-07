@@ -5,12 +5,11 @@ import ColorPicker from "./components/ColorPicker";
 
 function App() {
 
-
   const box = [];
 
   for (let i = 1; i <= 5; i++) {
     box.push(
-      <div className="box-ind" id={i} key={i} style={{ background: "" }}>
+      <div className="each-box" id={i} key={i} style={{ background: "" }}>
         <ColorPicker />
       </div>
     );
@@ -20,17 +19,16 @@ function App() {
 
   return (
     <div className="parent">
-      <h1>Palette Paradise</h1>
+      <h1 className="title">Palette Paradise</h1>
       <div
         className="box"
         ref={exportRef}
-        style={{ backgroundColor: "transparent", margin: 0, color: "black" }}>
+        style={{ color: "black" }}>
         {box}
       </div>
-      <button onClick={() => ExportAsImage(exportRef.current, "palette")}>
-        Download Image
+      <button className="download" onClick={() => ExportAsImage(exportRef.current, "palette")}>
+        Download Palette
       </button>
-
     </div>
   );
 }

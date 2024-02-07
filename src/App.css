@@ -1,31 +1,68 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .box {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    overflow: hidden;
+    margin: 5px;
+
 }
 
 .color-picker-container {
-    border: black solid 2px;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
     width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5px;
+}
+
+.selected-color {
+    font-weight: 900;
 }
 
 .input {
     text-align: center;
     width: 100px;
-    font-weight: 900;
 }
 
-.parent{
+.parent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+.title {
+    background-color: #e67e22;
+    border: 1px solid #f39c12;
+    border-radius: 5px;
+    box-shadow: 0px 6px 0px #d35400;
+    padding: 10px;
+}
+
+.download {
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    font-size: 17px;
+    background-color: #e67e22;
+    border: 1px solid #f39c12;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0px 6px 0px #d35400;
+    transition: all;
+    font-weight: 900;
+}
+
+.download:active {
+    box-shadow: 0px 4px 0px #d35400;
+    position: relative;
+    top: 2px;
 }
