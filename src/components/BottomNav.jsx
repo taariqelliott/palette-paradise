@@ -4,7 +4,6 @@ export default function BottomNav() {
     return (
         <div
             style={{
-                position: "absolute",
                 bottom: 0,
                 background: "#0044cc",
                 color: "white",
@@ -13,9 +12,9 @@ export default function BottomNav() {
                 justifyContent: "center",
                 alignItems: "center",
                 fontWeight: 900,
-                height: "30px"
+                height: "30px",
             }}>
-            Test
+            Palette Paradise
         </div>
     )
 }

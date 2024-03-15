@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import InputColor from 'react-input-color';
-
 import "../App.css";
 
 function contrast(hex) {
@@ -9,12 +7,12 @@ function contrast(hex) {
         g = 0,
         b = 0;
 
-    // 3 digits
+    // 3 digit hex
     if (hex.length === 4) {
         r = parseInt("0x" + hex[1] + hex[1]);
         g = parseInt("0x" + hex[2] + hex[2]);
         b = parseInt("0x" + hex[3] + hex[3]);
-        // 6 digits
+        // 6 digit hex
     } else if (hex.length === 7) {
         r = parseInt("0x" + hex[1] + hex[2]);
         g = parseInt("0x" + hex[3] + hex[4]);
@@ -24,7 +22,6 @@ function contrast(hex) {
 }
 
 const ColorPicker = (props) => {
-
     const [color, setColor] = useState("#000000");
     const [textColor, setTextColor] = useState("black");
 
@@ -47,9 +44,7 @@ const ColorPicker = (props) => {
             <div
                 className="color-display"
                 style={{ backgroundColor: color, color: textColor }}>
-
                 <p className="selected-color">Selected Color:</p>
-
                 <h3
                     style={{
                         color: textColor,
@@ -60,20 +55,15 @@ const ColorPicker = (props) => {
                     }}>
                     {color.toUpperCase()}
                 </h3>
-
             </div>
-
             <h4 style={{ color: textColor }}>[choose color below]</h4>
-
             <input
                 type="color"
                 value={color}
                 onChange={handleColorChange}
-                className="input"
-            />
-
+                className="input" />
         </div>
     );
-}
+};
 
 export default ColorPicker;
